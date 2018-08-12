@@ -33,4 +33,8 @@
 
 (define e4 (new-sqrt-iter 1.0 9))
 
-;; the attempt to calculate square root (as in e4) does not give intended results. The expression will never terminate. Because, new-if is an ordinary procedure and not a special form like if, its arguments will be evaluated before applying the operator. But the else-clause is a recursive call to the function. So the function is invoked again, the arguments are evaluated again and this will not end.
+;; the attempt to calculate square root (as in e4) does not give intended results.
+;; The expression will never terminate. Because, new-if is an ordinary procedure
+;; and not a special form like if, its arguments will be evaluated before applying
+;; the operator. But the else-clause is a recursive call to the function.
+;; So the function is invoked again, the arguments are evaluated again and this will not end.
